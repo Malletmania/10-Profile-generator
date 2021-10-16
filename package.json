@@ -1,0 +1,20 @@
+{
+  "name": "10-Profile-generator",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "engineer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malletmania/10-Profile-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malletmania/10-Profile-generator/issues"
+  },
+  "homepage": "https://github.com/Malletmania/10-Profile-generator#readme"
+}
