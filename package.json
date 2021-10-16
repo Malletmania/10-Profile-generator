@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Malletmania/10-Profile-generator/issues"
   },
-  "homepage": "https://github.com/Malletmania/10-Profile-generator#readme"
+  "homepage": "https://github.com/Malletmania/10-Profile-generator#readme",
+  "devDependencies": {
+    "jest": "^27.2.5"
+  }
 }
