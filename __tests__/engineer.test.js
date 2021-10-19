@@ -1,15 +1,26 @@
-// const Engineer = require('../jsfiles/engineer');
+const teamMember = require("../lib/team");
 
-// test('creates an object', () => {
-//     const Engineer = new Engineer('Benjamin', emp001, 'camarillolbenjamin@gmail.com', "Malletmania")
+describe("Test functionality of teamMember class", () => {
+  let teamMember1 = new teamMember("Danya", "3345", "Danyabu@gmail.com");
+  let teamMember2 = new teamMember("Jules", "8874", "Julesgem@gmail.com");
 
-//     expect(engineer.GitHub).toEqual(expect.any(string));
-// });
+  it("Should return names", () => {
+    expect(teamMember1.getName()).toBe("Danya");
+    expect(teamMember2.getName()).toBe("Jules");
+  });
 
-// test('askes for GibHub username', () => {
-//     const Engineer = new Engineer('Benjamin', emp001, 'camarillolbenjamin@gmail.com', "Malletmania")
+  it("Should return IDs from teamMember class", () => {
+    expect(teamMember1.getId()).toBe("3345");
+    expect(teamMember2.getId()).toBe("8874");
+  });
 
-//     expect(engineer.getGithub()).toequal(expect.stringContaining(engineer.github.toString()));
-// });
+  it("Should return emails from teamMember class", () => {
+    expect(teamMember1.getEmail()).toBe("Danyabu@gmail.com");
+    expect(teamMember2.getEmail()).toBe("Julesgem@gmail.com");
+  });
 
-// // test('')
+  it("Should return teamMember position from class", () => {
+    expect(teamMember1.getPosition()).toBe("✏ Employee");
+    expect(teamMember2.getPosition()).toBe("✏ Employee");
+  });
+});

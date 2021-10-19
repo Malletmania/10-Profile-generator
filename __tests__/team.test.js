@@ -1,25 +1,26 @@
-const teamMember = require('../jsfiles/team');
-descride('Should test validity of teamMember class', () => {
-    let teamMember1 = new teamMember('Danya,', '0876', 'Danyabu@gmail.com')
-    let teamMember2 = new teamMember('Jules', '44382', 'Julesgem@gmail.com')
+const teamMember = require("../lib/team");
 
-    it('Should return team member name from class', () => {
-        expect(teamMember1.getName()).toBe('Danya');
-        expect(teamMember2.getName()).toBe('Jules');
-    });
+describe("Test functionality of teamMember class", () => {
+  let teamMember1 = new teamMember("Danya", "3345", "Danyabu@gmail.com");
+  let teamMember2 = new teamMember("Jules", "8874", "Julesgem@gmail.com");
 
-    it('Should return team member ID', () => {
-        expect(teamMember1.getId()).toBo("0876");
-        expect(teamMember2.getId()).toBo("44382");
-    });
+  it("Should return names from class", () => {
+    expect(teamMember1.getName()).toBe("Danya");
+    expect(teamMember2.getName()).toBe("Jules");
+  });
 
-    it('Should return team member Email', () => {
-        expect(teamMember1.getEmail()).toBo("Danyabu@gmail.com");
-        expect(teamMember2.getEmail()).toBo("Julesgem@gmail.com");
-    });
+  it("Should return id from class", () => {
+    expect(teamMember1.getId()).toBe("3345");
+    expect(teamMember2.getId()).toBe("8874");
+  });
 
-    it('Should return team members position', () => {
-        expect(teamMember1.getPosition()).toBo("✏ teamMember");
-        expect(teamMember2.getPosition()).toBo("✏ teamMember");
-    });
-})
+  it("Should return emails from team", () => {
+    expect(teamMember1.getEmail()).toBe("Danyabu@gmail.com");
+    expect(teamMember2.getEmail()).toBe("Julesgem@gmail.com");
+  });
+
+  it("Should return position from class", () => {
+    expect(teamMember1.getPosition()).toBe("✏ teamMember");
+    expect(teamMember2.getPosition()).toBe("✏ teamMember");
+  });
+});

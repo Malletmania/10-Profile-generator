@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/Malletmania/10-Profile-generator#readme",
   "devDependencies": {
-    "jest": "^27.2.5"
+    "jest": "^27.2.5",
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0"
   }
 }
