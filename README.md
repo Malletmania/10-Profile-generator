@@ -1,4 +1,3 @@
-# 06-weather-panel
 # Team Profile Generator
 Bootcamp Homework #10
 
